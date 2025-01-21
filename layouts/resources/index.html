@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="page" data-page="{{ .Type }}">
+    <div class="main-content">
+        <div class="content-intro">
+            <span class="title">Resources</span>
+            <span class="subtitle">Get a deeper understanding of artificial intelligence, cognitive science, digital ethics, the philosophy of technology and more</span>
+        </div>
+        <div class="list-resources">
+            <span class="section-heading">Reading List</span>
+            <section>
+                <p>
+                    Informative and useful resources for those first taking an interest in the field AI or looking to deepen their knowledge of it.
+                    <br>
+                    <br>
+                    The entries are typically more philosophical than technical and a fair share of the resources focus on AI in context.
+                </p>
+            </section>
+
+            <iframe class="airtable-embed" src="https://airtable.com/embed/shrNtZIWJBWn6wqwy?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><span class="table-header">Using the Table</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li><strong>Importance</strong>: Relative to the main topic. For the topic <strong>Turing Test</strong>, for example,<em>Computing Machinery and Intelligence</em> scores five stars partly because Turing first presented the test in this paper and partly because of how frequently texts that also deal with the test reference it.<span class="list-item"></span></li>
+                                    <br>
+                                    <li><strong>Read with</strong>: The recommended texts often contain objections to the main idea in the text of the entry, builds on the ideas in it or perhaps contain that could fruitfully be explored in conjunction with it.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
