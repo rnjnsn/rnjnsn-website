@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="page" data-page="home">
+    <div class="main-content">
+        <div class="pre-posts">
+            <span class="title">Hi, I'm René.</span>
+            <span class="subtitle">I write articles at the intersection of Philosophy, Technology and Society.</span>
+        </div>
+        <div class="posts-container">
+            {{ range where .Site.RegularPages "Section" "posts" }}
+                <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">
+                    <div class="has-post-thumbnail">
+                        <div class="entry-clear">
+                            <div class="post-img">
+                                {{ $image := .Resources.GetMatch "imgs/featured.png" }}
+                                {{ with $image }}
+                                    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+                                {{ end }}
+                            </div>
+                            <div class="post-text">
+                                <span class="post-title">{{ .Title }}</span>
+                                {{ with .Params.subtitle }}
+                                    <span class="post-desc">{{ . }}</span>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

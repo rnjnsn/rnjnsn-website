@@ -1,0 +1,17 @@
+<!-- layouts/partials/sidenav.html -->
+<div class="sidenav">
+    <div id="logo-container">
+        <span id="logo">R</span>
+    </div>
+    <div class="sidenav-content">
+        <div class="sidenav-menu">
+            <ul>
+                <li id="home" {{ if .IsHome }}class="active"{{ else }}class="inactive"{{ end }}><a href="/"> <i class="fa-solid fa-house"></i></a></li>
+                <li id="about" {{ if eq .Type "about" }}class="active"{{ else }}class="inactive"{{ end }}><a href="/about"> <i class="fa-solid fa-user"></i></a></li>
+                <li id="resources" {{ if eq .Type "resources" }}class="active"{{ else }}class="inactive"{{ end }}><a href="/resources"> <i class="fa-solid fa-archive"></i></a></li>
+                <li id="contact" {{ if eq .Type "contact" }}class="active"{{ else }}class="inactive"{{ end }}><a href="/contact"> <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    {{ partial "theme-switch.html" . }}
+</div>

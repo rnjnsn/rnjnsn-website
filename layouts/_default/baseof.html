@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | rnjnsn</title>
+    <!-- DEBUG: IsHome: {{ .IsHome }}, Type: {{ .Type }}, Layout: {{ .Layout }} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    {{ $base := resources.Get "css/base.css" }}
+    <link rel="stylesheet" href="{{ $base.RelPermalink }}">
+    
+    <!-- page specific CSS -->
+    {{ $cssFile := "" }}
+    {{ if .IsHome }}
+        {{ $cssFile = "css/style-home.css" }}
+    {{ else if eq .Type "posts" }}
+        {{ $cssFile = "css/style-post.css" }}
+    {{ else if eq .Type "about" }}
+        {{ $cssFile = "css/style-about.css" }}
+    {{ else if eq .Type "contact" }}
+        {{ $cssFile = "css/style-contact.css" }}
+    {{ else if eq .Type "resources" }}
+        {{ $cssFile = "css/style-resources.css" }}
+    {{ end }}
+
+    {{ with $cssFile }}
+        {{ $style := resources.Get . }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ end }}
+</head>
+<body class="page-{{ .Type }}">
+    {{ partial "sidenav.html" . }}
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+    {{ if eq .Type "about" }}
+    <script src="https://d39pktu5dnvh24.cloudfront.net/scripts/vennDiagram.js"></script>
+    {{ end }}
+</body>
+</html>

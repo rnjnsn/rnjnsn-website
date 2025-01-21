@@ -1,0 +1,118 @@
+/* Homepage Layout */
+.page {
+    padding: 0;
+    height: 100%;
+    margin-left: 76.2px;
+    width: calc(100% - 76.2px);
+}
+
+.main-content {
+    margin: 3.5rem auto auto auto;
+    width: 37.5rem;
+    min-width: 37.5rem;
+    padding-bottom: 5rem;
+}
+
+/* Intro Section */
+.pre-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pre-posts .title {
+    font-family: 'Calibre';
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--title-text-color);
+}
+
+.pre-posts .subtitle {
+    margin-top: 6px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Calibre';
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.01rem;
+    color: var(--text-opacity-m);
+}
+
+/* Links */
+a, a:hover, a:visited, a:active {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/* Post Cards */
+.has-post-thumbnail {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.has-post-thumbnail .entry-clear {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(250,250,250,0.090);
+    overflow: hidden;
+    transition: transform .33s ease-out,box-shadow .33s ease-out;
+}
+
+.has-post-thumbnail .entry-clear:hover {
+    box-shadow: 0 6px 14px rgba(48, 48, 48, 0.3);
+}
+
+.post-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.5;
+}
+
+.post-text {
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.post-title {
+    font-family: 'Calibre';
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--title-text-color);
+    margin: 0;
+}
+
+.post-desc {
+    font-family: 'Calibre';
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--subtitle-text-color);
+    margin: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    .page {
+        padding: 0;
+        height: 100%;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-content {
+        margin-top: 2rem;
+        width: 99%;
+        min-width: 0;
+    }
+
+    .pre-posts {
+        padding: 0 1rem;
+    }
+}

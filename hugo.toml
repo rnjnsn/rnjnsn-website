@@ -1,0 +1,34 @@
+baseURL = 'http://localhost:1313/'  # Change this to your production URL later
+languageCode = 'en-us'
+title = 'Rene Jensen'  # Update this to your site name
+
+# Enable unsafe HTML if you need to embed HTML in markdown
+[markup.goldmark.renderer]
+unsafe = true
+
+# Add asset configuration
+[build]
+writeStats = true
+
+# Add menu configuration if needed
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Work"
+    url = "/work/"
+    weight = 2
+  [[menu.main]]
+    name = "Guide to CPH"
+    url = "/guidetocph/"
+    weight = 3
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5

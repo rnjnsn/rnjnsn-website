@@ -1,0 +1,13 @@
+<!-- layouts/partials/footer.html -->
+<footer class="footer">
+    <ul><a id="backtotop" href="#"><i class="fa-regular fa-circle-up"></i></a></ul>
+    <ul id="logo-footer"><a href="/">R</a></ul>
+    <nav class="footer-nav">
+        <ul class="list-bare">
+            {{ if not .IsHome }}<li id="home"><a href="/">Home</a></li>{{ end }}
+            {{ if ne .Type "about" }}<li id="about"><a href="/about">About</a></li>{{ end }}
+            {{ if ne .Type "resources" }}<li id="resources"><a href="/resources">Resources</a></li>{{ end }}
+            {{ if ne .Type "contact" }}<li id="contact"><a href="/contact">Contact</a></li>{{ end }}
+        </ul>
+    </nav>
+</footer>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="page">
+    <div class="post">
+        <div class="post-header">
+            <div class="post-header-titles">
+                <span class="post-title">{{ .Title }}</span>
+                {{ with .Params.subtitle }}
+                <span class="subtitle">{{ . }}</span>
+                {{ end }}
+            </div>
+            <div class="post-header-dates">
+                <span class="published-date">{{ .Date.Format "January 2, 2006" }}</span>
+                {{ if ne .Lastmod .Date }}
+                <span class="update-date">• Updated {{ .Lastmod.Format "January 2, 2006" }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ with .Resources.GetMatch "imgs/featured.png" }}
+        <div class="entry-clear">
+            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+        </div>
+        {{ end }}
+        <div class="post-text">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
