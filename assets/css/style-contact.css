@@ -182,10 +182,6 @@ color: var(--contact-type);
 
 @media only screen and (max-width: 64rem) {
 
-  .sidenav {
-    display: none;
-  }
-
   img {
     border-radius: 0%;
   }
@@ -204,20 +200,8 @@ color: var(--contact-type);
 }
 
 @media screen and (max-width: 600px) {
-  .sidenav {
-    display: none;
-  }
 
-  .sidenav-menu {
-    margin-top: 0rem;
-
-    }
-
-    .theme-switch-wrapper {
-  display: none;
-    }
-
-.page {
+  .page {
   margin-left: 0;
   width: 100%;
 }
@@ -269,19 +253,6 @@ gap: 5.5rem;
 .post-header {
 width: 92%;
 margin-top:20px;
-}
-
-.footer {
-width: 100%;
-min-width: 0%;
-margin-left: auto;
-margin-right: auto;
-
-  }
-
-#logo-footer {
-width: 95%;
-text-align: center;
 }
 
 }
