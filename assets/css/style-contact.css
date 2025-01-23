@@ -41,14 +41,6 @@ h4 {
   margin-bottom: 0px;
   }
 
-p {
-  font-family: 'Calibre';
-  font-weight: 400;
-  font-size: 1.20rem;
-  color: #fff;
-  line-height: 1.7rem;
-}
-
 a {
   font-family: 'Calibre';
   font-weight: 600;
@@ -212,30 +204,6 @@ font-weight: 600;
   margin-left: 0rem;
   font-size: 1.45rem;
   opacity: 60%;
-}
-
-.sidenav {
-  padding: 0.35rem;
-  width: 92%;
-  position: relative;
-  margin: 2em auto 0;
-  border-radius: 16px;
-  border-right: none !important;
-}
-
-.sidenav ul {
-display: flex;
-justify-content: center;
-gap: 5.5rem;
-}
-
-.sidenav ul li {
-  padding-bottom: 0px;
-  display: inline-block;
-}
-
-#logo-container {
-  display: none;
 }
 
 .post-header {

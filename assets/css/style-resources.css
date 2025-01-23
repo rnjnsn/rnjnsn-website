@@ -33,14 +33,6 @@ letter-spacing: 0.03rem;
 margin-bottom: 0px;
 }
 
-p {
-  font-family: 'Calibre';
-  font-weight: 400;
-  font-size: 1.20rem;
-  color: var(--main-text-color);
-  line-height: 1.7rem;
-}
-
 .page {
   padding: 0;
   height: 100%;

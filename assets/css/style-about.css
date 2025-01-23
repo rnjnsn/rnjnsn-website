@@ -45,14 +45,6 @@ a:hover {
   text-decoration-color: var(--link-text-color);
 }
 
-p {
-  font-family: 'Calibre';
-  font-weight: 400;
-  font-size: 1.20rem;
-  color: #fff;
-  line-height: 1.7rem;
-}
-
 .page {
   padding: 0;
   height: 100%;
