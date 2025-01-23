@@ -379,6 +379,58 @@ input:checked + .slider:before {
     display: none;
 }
 
+/* POST ELEMENTS */
+
+blockquote {
+position: relative;
+    margin: 0 1em 1.5em;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #2a2f35;
+    color: #6a7280;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+    margin-bottom: 0px;
+}
+
+blockquote:before {
+position: absolute;
+    content: " ";
+    left: 0;
+    width: 4px;
+    background: #303030;
+    top: 0.5em;
+    border-radius: 6px;
+    height: calc(100% - 1rem);
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+blockquote:hover:before {
+position: absolute;
+    content: " ";
+    left: 0;
+    width: 4px;
+    background: #fff;
+    top: 0.5em;
+    border-radius: 6px;
+    height: calc(100% - 1rem);
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+blockquote p  {
+margin-top: 0px;
+line-height: 1.5rem!important;
+}
+
+blockquote p:hover {
+opacity: 100% !important;
+}
+
 @media screen and (max-width: 600px) {
   .sidenav-menu {
     margin-top: 0rem;
