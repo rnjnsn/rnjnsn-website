@@ -1,16 +1,19 @@
-baseURL = 'http://localhost:1313/'  # Change this to your production URL later
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'Rene Jensen'  # Update this to your site name
+title = 'Rene Jensen'
 
-# Enable unsafe HTML if you need to embed HTML in markdown
 [markup.goldmark.renderer]
 unsafe = true
 
-# Add asset configuration
+[markup.goldmark.extensions]
+footnote = true
+
 [build]
 writeStats = true
 
-# Add menu configuration if needed
+[taxonomies]
+tag = "tags"
+
 [menu]
   [[menu.main]]
     name = "About"

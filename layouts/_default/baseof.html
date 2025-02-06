@@ -21,6 +21,10 @@
         {{ $cssFile = "css/style-contact.css" }}
     {{ else if eq .Type "resources" }}
         {{ $cssFile = "css/style-resources.css" }}
+    {{ else if eq .Type "work" }}
+        {{ $cssFile = "css/style-work.css" }}
+    {{ else if eq .Type "breaking-down-silos" }}
+        {{ $cssFile = "css/style-breaking-down-silos.css" }}
     {{ end }}
 
     {{ with $cssFile }}

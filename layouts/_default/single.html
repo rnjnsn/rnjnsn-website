@@ -20,6 +20,13 @@
             <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
         </div>
         {{ end }}
+        {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+            <a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
         <div class="post-text">
             {{ .Content }}
         </div>

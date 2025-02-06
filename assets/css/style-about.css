@@ -52,21 +52,6 @@ a:hover {
   width: calc(100% - 76.2px);
 }
 
-.title {
-font-family: 'Calibre';
-font-size: 2.6rem;
-line-height: 3.4rem;
-font-weight: 800;
-color: var(--title-text-color);
-}
-
-.subtitle {
-  font-family: 'Calibre';
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: var(--subtitle-text-color);
-}
-
 .main-content {
   display: flex;
   flex-direction: column;

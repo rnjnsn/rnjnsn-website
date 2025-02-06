@@ -71,6 +71,7 @@
   --entry-background: rgba(245, 247, 248.1);
   --entry-border-color: rgba(0,0,0,0);
   --emphasis-color: rgba(33, 36, 39,1);
+  --bullet-color: #f76c43;
   --bullet-point-text-color: #000;
   --border-color: rgba(0,0,0, 0.10);
   --main-bg-color: rgba(256,256,256, 1);
@@ -101,6 +102,7 @@
   --entry-background: rgba(250,250,250,0.090);
   --entry-border-color: #202020;
   --emphasis-color: #fff;
+  --bullet-color: #f76c43;
   --bullet-point-text-color: #fff;
   --border-color: rgba(256,256,256, 0.15);
   --main-bg-color: #000000;
@@ -108,7 +110,7 @@
   --icon-color: rgba(256,256,256, 0.45);
   --icon-color-inactive: rgba(256,256,256, 0.15);
   --title-text-color: #fff;
-  --subtitle-text-color: rgba(256,256,256, 0.5);
+  --subtitle-text-color: rgba(255,256,255, 0.5);
   --link-text-color: #f8f8f8;
   --list-text-color: #f8f8f8;
   --sidenav-bg-color: rgba(250,250,250,0.075);
@@ -132,7 +134,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: none;
-  font-family: 'calibre-web-regular', 'sans-serif';
+  font-family: 'Calibre', 'sans-serif';
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
   background-color: var(--main-bg-color);
@@ -141,34 +143,57 @@ body {
 h1 {
   text-align: left;
   color: #fff;
-  font-family: 'Calibre';
-  font-size: 4.3rem;
+  font-size: 4rem;
   line-height: 1.11;
   font-weight: 600;
 }
 
 h2 {
-  font-family: 'Calibre';
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
 }
 
 h3 {
-  font-family: 'Calibre';
   text-align: left;
-  font-size: 2.0rem;
+  font-size: 1.0rem;
   color: var(--title-text-color);
   font-weight: 500;
   letter-spacing: 0.03rem;
   margin-bottom: 0px;
 }
 
+h4 {
+  text-align: left;
+  font-size: 0.5rem;
+  color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0px;
+}
+
+/* Make h1 and h2 inside .title-group behave like span */
+.title-group h1,
+.title-group h2 {
+  margin: 0; /* Remove default margins */
+}
+
+/* Keep h2.subtitle styles */
+.title-group h2{
+  color: var(--text-opacity-m);
+}
+
 p {
-  font-family: 'Calibre';
+color: var(--main-text-color);
+font-size: 1.25rem;
+line-height: 1.413rem;
+}
+
+
+li {
   font-weight: 400;
   font-size: 1.20rem;
-  color: #fff;
+  color: var(--bullet-point-text-color);
   line-height: 1.7rem;
 }
 
@@ -430,6 +455,103 @@ line-height: 1.5rem!important;
 blockquote p:hover {
 opacity: 100% !important;
 }
+
+
+/* Footnotes and Citations System */
+
+/* Footnote number styling */
+.footnote-ref {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: 500;
+  position: relative;
+  top: -0.5em;
+  margin: 0 0.15em;
+  width: 1.1em;
+  height: 1.5em;
+  background: #663399;
+  color: white;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 
+    0 1px 2px rgba(0,0,0,0.1),
+    inset 0 1px 1px rgba(255,255,255,0.2);
+}
+
+/* Footnotes section styling */
+.footnotes {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(102, 51, 153, 0.1);
+  border: 1px solid rgba(102, 51, 153, 0.2);
+  border-radius: 8px;
+}
+
+.footnotes h2 {
+  font-size: 1.25rem;
+  color: #663399;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.75em;
+  color: #443355;
+}
+
+.footnote-backref {
+  text-decoration: none;
+  margin-left: 0.5em;
+  color: #663399;
+  opacity: 0.8;
+}
+
+.footnote-backref:hover {
+  opacity: 1;
+}
+
+/* Bibliography section */
+.bibliography {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.bibliography h2 {
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.bibliography-entry {
+  margin-bottom: 1em;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+
+
+.wip-container {
+  background-color: rgba(253, 224, 71, 0.5);
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 45.5rem;
+}
+
+
+.wip-text {
+  color: #854d0e;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
 
 @media screen and (max-width: 600px) {
   .sidenav-menu {
