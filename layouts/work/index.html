@@ -1,127 +1,360 @@
 {{ define "main" }}
 <div class="page" data-page="{{ .Type }}">
     <div class="main-content">
-        <!-- Introduction Section -->
-<div class="title-group">
-    <h1>Work</h1>
-        <h2 class=subtitle>A supplement to my LinkedIn profile that provides an at-a-glance overview of achievements and lends more detail to my professional trajectory</h2>
+        <div class="title-group">
+            <h1>Work</h1>
+            <h2 class="subtitle">PRINCE2-certified Senior Knowledge Manager with 8+ years of experience</h2>
+        </div>
+
+        <!-- Key Achievements Section -->
+<div class="achievements-highlight">
+   <ul class="highlight-list">
+       <li>Top-performing knowledge manager Ubisoft</li>
+       <li>Co-created state-of-the-art knowledge management system at Ubisoft</li>
+   </ul>
 </div>
-        <!-- Work In Progress Banner -->
-        <div class="wip-container">
-            <span class="wip-text">
-                <i class="fas fa-wrench"></i> Work in Progress
-            </span>
-        </div>
-
-        <!-- Achievements Highlight -->
-        <div class="achievements-highlight">
-            <div class="flex items-center gap-3 p-4 bg-neutral-800/50 rounded-lg border border-neutral-800">
-                <i class="fas fa-trophy text-yellow-500"></i>
-                <p class="text-lg text-white m-0">Top-performing knowledge manager at Ubisoft</p>
-            </div>
-            <div class="flex items-center gap-3 p-4 bg-neutral-800/50 rounded-lg border border-neutral-800">
-                <i class="fas fa-trophy text-yellow-500"></i>
-                <p class="text-lg text-white m-0">Co-created the state-of-the-art knowledge eco-system at Ubisoft</p>
-            </div>
-        </div>
-
-        <!-- Analytics Image -->
-        <div class="analytics-image">
-            <img 
-                src="/api/placeholder/800/400"
-                alt="Analytics Screenshot" 
-                class="w-full rounded-lg border border-neutral-800"
-            />
-        </div>
-
-        <!-- Achievements Section -->
-        <section class="achievements-section">
-            <h2>Achievements</h2>
+        <!-- Experience Timeline -->
+        <section class="experience-timeline">
+            <h2>Experience</h2>
             
-            <div class="achievement">
-                <div class="achievement-header">
-                    <h3 class="achievement-title">Process Automation</h3>
-                    <p class="description">Identified inefficient manual prefix updating process requiring 26+ hours of work. Developed automated script to process 8,849 pages, reducing time per page from 10.8 to 2.44 seconds and saving 20.5 hours of manual effort.</p>
+            <!-- Ubisoft -->
+            <div class="role-card">
+                <div class="role-header">
+                    <div class="role-title">
+                        <h3>Knowledge Strategist</h3>
+                        <span class="company">Ubisoft</span>
+                        <span class="period">2022 - Present | Berlin</span>
+                    </div>
                 </div>
-                <div class="achievement-context">
-                    <div class="metric">
-                        <p class="metric-value">77%</p>
-                        <p class="metric-label">Time Reduction</p>
-                    </div>
-                    <div class="metric">
-                        <p class="metric-value">8,849</p>
-                        <p class="metric-label">Pages Processed</p>
-                    </div>
-                    <div class="metric">
-                        <p class="metric-value">20.5h</p>
-                        <p class="metric-label">Time Saved</p>
+
+                <!-- Key Achievements First -->
+             <div class="achievements-list">
+                    <ul>
+            <li>Top-performing knowledge manager</li>
+       <li>Co-created state-of-the-art knowledge ecosystem</li>
+
+                    </ul>
+                </div>
+
+                <!-- Case Studies Section -->
+                <div class="case-studies">
+                    <h4 class="section-label">Case Studies</h4>
+                    <div class="case-grid">
+                        <a href="/breaking-down-silos" class="case-card">
+                            <div class="case-header">
+                                <h5>Breaking Down Information Silos</h5>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <p class="case-description">Strategic initiative to unify knowledge management</p>
+                        </a>
+
+                        <a href="/cases/process-automation" class="case-card">
+                            <div class="case-header">
+                                <h5>Process Automation Leadership</h5>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <p class="case-description">Automated documentation workflows</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="achievement">
-                <div class="achievement-header">
-                    <h3 class="achievement-title">Process Automation</h3>
-                    <p class="description">Developed automated script to process 8,365 with the purpose of labeling pages with the prefix of their ancestors.</p>
-                </div>
-                        <p class="impact">Initial Impact<p>
-                <div class="achievement-context">
-                    <div class="metric">
-                        <p class="metric-value">77%</p>
-                        <p class="metric-label">Time Reduction</p>
-                    </div>
-                    <div class="metric">
-                        <p class="metric-value">8,849</p>
-                        <p class="metric-label">Pages Processed</p>
-                    </div>
-                    <div class="metric">
-                        <p class="metric-value">20.5h</p>
-                        <p class="metric-label">Time Saved</p>
-                    </div>
-                </div>
-                        <p class="impact">Annual Impact<p>
-                <div class="achievement-context">
-                    <div class="metric">
-                        <p class="metric-value">77%</p>
-                        <p class="metric-label">Time Reduction</p>
-                    </div>
-                    <div class="metric">
-                        <p class="metric-value">8,849</p>
-                        <p class="metric-label">Pages Processed</p>
-                    </div>
-                    <div class="metric">
-                        <p class="metric-value">20.5h</p>
-                        <p class="metric-label">Time Saved</p>
+            <!-- PREVIOUS ROLES -->
+
+            <!-- Infomedia -->
+            <div class="role-card">
+                <div class="role-header">
+                    <div class="role-title">
+                        <h3>Media Analyst</h3>
+                        <span class="company">Lunulae</span>
+                        <span class="period">2017 - 2021 | Copenhagen</span>
                     </div>
                 </div>
 
+                <div class="achievements-list">
+                    <ul>
+                        <li>Delivered 100+ Projects</li>
+                        <li>Retained a C20-client</li>
+                        <li>Managed multiple projects simultaneously across fixed-price and hourly contracts</li>
+                    </ul>
+                </div>
+            </div>
+
+                  <!-- Lunulae -->
+            <div class="role-card">
+                <div class="role-header">
+                    <div class="role-title">
+                        <h3>Communications Consultant</h3>
+                        <span class="company">Lunulae</span>
+                        <span class="period">2017 - 2021 | Copenhagen</span>
+                    </div>
+                </div>
+
+                <div class="achievements-list">
+                    <ul>
+                        <li>Built diverse client portfolio including Canva and AB InBev</li>
+                        <li>Developed actionable content strategies focusing on brand awareness</li>
+                        <li>Managed multiple projects simultaneously across fixed-price and hourly contracts</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+<div class="skills-map">
+    <!-- Center bubble -->
+    <div class="bubble large" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        Knowledge Management
+    </div>
+    
+    <!-- Surrounding bubbles -->
+    <div class="bubble medium" style="top: 20%; left: 30%;">Process Automation</div>
+    <div class="bubble small" style="top: 25%; left: 60%;">Frontend</div>
+    <div class="bubble medium" style="top: 70%; left: 25%;">Digital Strategy</div>
+    <div class="bubble small" style="top: 75%; left: 45%;">Marketing</div>
+    <div class="bubble accent" style="top: 30%; right: 20%;">Interaction Design</div>
+</div>
+
+
+
+            <!-- Skills Section -->
+        <section class="certificates-section">
+            <h2>Skills & Expertise</h2>
+            <div class="certificate-group">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Knowledge Management Systems</li>
+                    <li>Content Strategy Development</li>
+                    <li>Process Automation (Python)</li>
+                    <li>Data Analysis & Visualization</li>
+                </ul>
+            </div>
+            <div class="certificate-group">
+                <h3>Methodologies</h3>
+                <ul>
+                    <li>PRINCE2 Project Management</li>
+                    <li>Change Management</li>
+                    <li>Agile/Scrum</li>
+                </ul>
             </div>
         </section>
 
-        <!-- Certificates Section -->
+        <!-- Professional Development -->
         <section class="certificates-section">
-            <h2>Certificates</h2>
+            <h2>Professional Development</h2>
             <div class="certificate-group">
                 <h3>Project Management</h3>
                 <ul>
-                    <li>PRINCE2® Foundation</li>
-                    <li>PRINCE2® Practitioner</li>
+                    <li>PRINCE2® Foundation (GR466012695RJ)</li>
+                    <li>PRINCE2® Practitioner (GR467005263RJ)</li>
                 </ul>
-                <p>See also: <a href="/prince2">Thoughts on Becoming a PRINCE2 Certified</a></p>
-            </div>
-        </section>
-            <section class="certificates-section">
-            <h2>Skills</h2>
-            <div class="certificate-group">
-                <h3>Coding</h3>
-                <ul>
-                    <li>HTML, CSS, JS</li>
-                    <li>PRINCE2® Practitioner</li>
-                </ul>
-                <p>See also: <a href="/prince2">Thoughts on Becoming a PRINCE2 Certified</a></p>
             </div>
         </section>
 
+        <!-- Supporting Sections -->
+        <section class="certificates-section">
+            <h2>Education & Languages</h2>
+            <div class="certificate-group">
+                <h3>Education</h3>
+                <ul>
+                    <li>MA Philosophy, UCPH (First Class Honours)</li>
+                    <li>BA English, UCPH (2:1+)</li>
+                </ul>
+            </div>
+            <div class="certificate-group">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Danish (Native)</li>
+                    <li>English (Full Professional)</li>
+                    <li>German (Professional)</li>
+                    <li>French (Limited Professional)</li>
+                </ul>
+            </div>
+        </section>
+
+        <style>
+            .role-card {
+                background: rgba(250,250,250,0.090);
+                border: 1px solid #202020;
+                border-radius: 12px;
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .case-studies {
+                margin-top: 2rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid #303030;
+            }
+
+            .section-label {
+                color: var(--text-opacity-m);
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+
+            .case-grid {
+                display: grid;
+                gap: 1rem;
+            }
+
+            .case-card {
+                background: rgba(250,250,250,0.05);
+                border: 1px solid #303030;
+                border-radius: 8px;
+                padding: 1rem;
+                text-decoration: none;
+                transition: all 0.2s ease;
+            }
+
+            .case-card:hover {
+                border-color: #f76c43;
+                background: rgba(250,250,250,0.08);
+            }
+
+            .case-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.5rem;
+            }
+
+            .case-header h5 {
+                color: var(--title-text-color);
+                margin: 0;
+                font-size: 1rem;
+            }
+
+            .case-description {
+                color: var(--text-opacity-m);
+                font-size: 0.9rem;
+                margin: 0;
+            }
+
+            .role-card {
+                background: rgba(250,250,250,0.090);
+                border: 1px solid #202020;
+                border-radius: 12px;
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .role-title {
+                margin-bottom: 1rem;
+            }
+
+            .role-title h3 {
+                color: var(--title-text-color);
+                margin: 0;
+            }
+
+            .company, .period {
+                display: block;
+                color: var(--text-opacity-m);
+            }
+
+            .achievements-list ul {
+                list-style: none;
+                padding: 0 0 0 1em;
+                margin: 1rem 0;
+            }
+
+            .achievements-list li {
+                padding: 0.5rem 0;
+                color: var(--text-opacity-ml);
+                font-size: 1.1rem;
+            }
+
+            .achievements-list li:before {
+                content: "•";
+                color: var(--bullet-color);
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+            .case-studies {
+                margin-top: 1.5rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid #303030;
+            }
+
+
+    .highlight-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.highlight-list li {
+   padding: 1rem 1rem 1rem 2.5rem;
+   margin-bottom: 1rem;
+   background: rgba(250,250,250,0.090);
+   border: 1px solid #202020;
+   border-radius: 8px;
+   color: var(--text-opacity-l);
+   font-size: 1.125rem;
+   position: relative;
+}
+
+.highlight-list li:before {
+    content: "\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #f76c43;
+    position: absolute;
+    left: 1rem;
+}
+
+
+    .skills-map {
+    position: relative;
+    height: 600px;
+    background: var(--main-bg-color);
+    margin: 2rem 0;
+}
+
+.bubble {
+    position: absolute;
+    background: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bubble.large {
+    width: 180px;
+    height: 180px;
+    font-size: 1.2rem;
+}
+
+.bubble.medium {
+    width: 140px;
+    height: 140px;
+}
+
+.bubble.small {
+    width: 100px;
+    height: 100px;
+    font-size: 0.9rem;
+}
+
+.bubble.accent {
+    background: #ffb7b7;
+    color: #1a1a1a;
+}
+
+
+
+        </style>
     </div>
 </div>
 {{ end }}
+

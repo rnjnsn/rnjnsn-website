@@ -9,16 +9,23 @@ featured_image: "imgs/featured.png"
 
 Recently I have been thinking about how we can improve engagement on our documentation platforms. It is not that our numbers are bad in and of themselves, but of course Confluence does ), and we're competitive enough to want to have the highest engagement rates.
 
-It was against this background that I began to look more into gamification. I find that it is it both an interesting and promising motivational tool, but I also recognize how ubiquitous it has become at this point and how many of the applications that's floating around, sadly, don't work well and end up pushing users away rather than keeping them engaged because ad naseuam.
+It was against this background that I began to look more into gamification. 
+
+I find that it is it both an interesting and promising motivational tool, but I also recognize how ubiquitous it has become at this point and how frequently, sadly, it is misused and end up pushing users away rather than keeping them engaged.
  
 But because I believe that the concept is fundamentally good but the implementation often bad, I still want to reflect a bit on how it can be useful for knowledge managers and what can be done to heighten the chances of succes of gamified solutions.
 
-I believe this will be welcome to the extent that it can help knowledge managers close the 
+I believe this will be welcome to the extent that it can help knowledge managers close the gap that often exist on projects between the kind of documentation that the project wished it had and what is actually has. By 
 
 It is no secret that there is often a gap between the kind of documentation that projects would like to have and the documentation they do have.
 
-Neddless to say, different projects need and create different kinds of documentation and so while I believe that some of the insights in whats follows are broadly applicable, some of them are also bound to be specific to the video game industry.
+Needless to say, knowledge systems and processes must be designed to fit the needs of the project or organization and so while I believe that some of the insights in whats follows are broadly applicable, there will also be some that are bound to be specific to the video game industry, particularly tripe-A games.[^1]
 
+## Gamification defined 
+
+Gamification is the application of game elements, particularly game mechanics and experience design, outside of the realm of games as a means to motivate a group of people to engage in some activity.
+
+We can distinguish between internal and external gamification initiatives
 
 ## Preliminaries
 
@@ -52,7 +59,7 @@ Below is a table with common knowledge management tasks and suggested gamificati
 |------|----------------------|-----------|
 | **Content Management** |||
     | Creation | - Point per document<br><br>- Extra points for creating documents that score highly on some objective quality metric | Users are creators |
-| Maintenance | | |
+        | Maintenance | - Points for check if a document is up to date | This will frequently be part of a LCM framework together with e.g reviews|
 | Review | Points for reviewing | Done by page owner |
 | Archive | Points for archival marking | |
 | **Organization** |||
@@ -69,4 +76,6 @@ The points can be used to either give team members a badge for their contributio
 
 ## References
 
-[^1]: There are other reasons to be cautious as well. Gamification is sometimes seeen as a kind of persuasin that trades in ...
+[^1]: There are other reasons to be cautious as well. Gamification is sometimes seeen as a kind of *soft* power that seeks to persuade into taking actions they not have taken otherwise.
+
+
