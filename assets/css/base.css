@@ -594,7 +594,7 @@ margin: 0 auto;
   }
 
   /* Navigation Links */
-#home a, #about a, #resources a, #contact a {
+.footer #home a, #about a, #resources a, #contact a {
   margin-left: 0px;
   font-size: 1rem;
   color: var(--icon-color);
