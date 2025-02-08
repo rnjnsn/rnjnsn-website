@@ -594,12 +594,11 @@ margin: 0 auto;
   }
 
   /* Navigation Links */
-.footer #home a, #about a, #resources a, #contact a {
+.footer #home a, .footer #about a, .footer #resources a, .footer #contact a {
   margin-left: 0px;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--icon-color);
 }
-
 
 }
 
